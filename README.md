@@ -1,4 +1,4 @@
-# Imersão Dev Alura - Aula 06 - Objetos e tabelas de classificação
+# Objetos e tabelas de classificação
 
 ### Screenshot
 
