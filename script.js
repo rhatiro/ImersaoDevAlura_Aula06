@@ -1,21 +1,21 @@
-var papaiRob = {
-  nome: "Papai Rob",
+var player01 = {
+  nome: "Player 01",
   emoji: "🧙‍♂️",
   vitorias: 0,
   empates: 0,
   derrotas: 0,
   pontos: 0
 };
-var ravi = {
-  nome: "Ravi",
+var player02 = {
+  nome: "Player 02",
   emoji: "🚴‍",
   vitorias: 0,
   empates: 0,
   derrotas: 0,
   pontos: 0
 };
-var michi = {
-  nome: "Michi",
+var player03 = {
+  nome: "Player 03",
   emoji: "🐈",
   vitorias: 0,
   empates: 0,
@@ -23,21 +23,21 @@ var michi = {
   pontos: 0
 };
 
-papaiRob.pontos = calculaPontos(papaiRob);
-ravi.pontos = calculaPontos(ravi);
-michi.pontos = calculaPontos(michi);
+player01.pontos = calculaPontos(player01);
+player02.pontos = calculaPontos(player02);
+player03.pontos = calculaPontos(player03);
 
 function calculaPontos(jogador) {
   var pontos = jogador.vitorias * 3 + jogador.empates;
   return pontos;
 }
 
-var jogadores = [papaiRob, ravi, michi];
+var jogadores = [player01, player02, player03];
 
 function exibeJogadoresNaTela(jogadores) {
   var elemento = "";
   for (var i = 0; i < jogadores.length; i++) {
-    elemento += "<tr><td>" + jogadores[i].nome + jogadores[i].emoji + "</td>";
+    elemento += "<tr><td>" + jogadores[i].nome + " " + jogadores[i].emoji + "</td>";
     elemento += "<td>" + jogadores[i].vitorias + "</td>";
     elemento += "<td>" + jogadores[i].empates + "</td>";
     elemento += "<td>" + jogadores[i].derrotas + "</td>";
